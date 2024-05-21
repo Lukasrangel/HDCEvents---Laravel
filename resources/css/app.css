@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* BOOT CSS */
+body {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.center {
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 1200px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.title {
+    border-bottom: 12px;
+}
+
+/* HEADER */
+header div {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+header div ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header div ul li {
+    padding: 0 40px;
+    font-size: medium;
+    width: 100%;
+}
+
+header a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+header a, button a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* Welcome page */
+.banner-inicial {
+    width:100%;
+    height: 420px;
+    background-image: url(http://127.0.0.1/aprendendo-lav/resources/imgs/palestra.jpg);
+    background-size: cover;
+    margin-bottom: 20px
+}
+
+
+.banner-inicial form {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner-inicial form input {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.banner-events {
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 22px;
+    width: 100%;
+    
+}
+
+.banner-event-single {
+    border: 1px solid gray;
+    text-align: left;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    /*padding: 8px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 22%;
+}
+
+.banner-event-single img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.banner-event-single .event-info {
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card-date {
+    color: gray;
+}
+
+button a {
+    width: 100%;
+    display: block;
+}
+
+
+/*Criar eventos page */
+.banner-form {
+    margin-bottom: 240px;
+}
+
+.banner-form label {
+    font-weight: bold;
+}
+
+.banner-form select {
+    width: 100%;
+    padding: 8px;
+}
+.banner-form form {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-form form .form-group {
+    padding-bottom: 12px;
+}
+
+.msg {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    background-color: #15aa24;
+    color: white;
+    border: 1px solid #153324;
+    margin-bottom: 0;
+}
+
+.msgerror {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    background-color: #e93b35;
+    color: white;
+    border: 1px solid #d11b03;
+    margin-bottom: 0;
+}
+
+/* Event single page */
+.container-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-info svg {
+    color: darkslateblue;
+}
+
+.banner-description {
+    margin-top: 22px;
+}
+
+.container-info ul {
+    list-style-type: none;
+}
+
+/* Entrar Page */
+.form-login {
+    margin: 0 auto;
+    width: 50%;
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+    top: 180px;
+}
+
+.form-login .logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-login p {
+    margin-top: 8px;
+}
+
+.form-login a {
+    text-decoration: none;
+}
+.form-login .form-group {
+    margin-bottom: 8px;
+}
+
+.msgerror ul li{
+    list-style-type: none;
+}
+
+/* dashboard */
+.banner-eventos table {
+    width: 100%;
+}
+
+.banner-eventos a {
+    text-decoration: none;
+}
+
+.banner-eventos table th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.banner-eventos table tr td#actions form {
+    display: inline-block;
+}
+
+/* edit event */
+.form-group img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    width: 100%;
+    bottom: 0;
+    background-color: darkslateblue;
+    height: 98px;
+}
+
+footer div {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+    /* Welcome Page*/
+    .banner-event-single {
+        width: 97%;
+    }
+
+}

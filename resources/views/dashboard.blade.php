@@ -8,9 +8,11 @@
 <main>
 
     <div class="banner-eventos center">
+        <h1> Olá {{ auth()->user()->name }}</h1>
 
-        <h1> Seus eventos </h1>
+        <h2> Seus eventos </h2>
 
+        
         @if(count($events) == 0)
                 <p> Você não possui nenhum evento, <a href='/criar-evento'> criar evento </a> </p>
         @else
@@ -67,7 +69,7 @@
         </table>
         @endif
 
-        <h1> Eventos com sua presença marcada: </h1>
+        <h2> Eventos com sua presença marcada: </h2>
       
         @if(count($eventsAsParticipants) == 0)
                 <p> Você não tem presença confirmada em nenhum evento, <a href='/'> veja eventos </a> </p>

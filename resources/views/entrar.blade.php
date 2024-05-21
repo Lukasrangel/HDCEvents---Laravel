@@ -34,6 +34,7 @@
 
         <form method='post' action='entrar'>
             @csrf
+            @method('POST')
         <div class="form-group">
             <input type="email" class="form-control" name='email' placeholder='Login'>  
         </div>

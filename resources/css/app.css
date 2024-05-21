@@ -229,6 +229,8 @@ button a {
 /* dashboard */
 .banner-eventos table {
     width: 100%;
+    margin-top: 32px;
+    margin-bottom: 22px;
 }
 
 .banner-eventos a {
@@ -238,6 +240,10 @@ button a {
 .banner-eventos table th {
     border-top: 1px solid;
     border-bottom: 1px solid;
+}
+
+.banner-eventos table td {
+    padding: 12px 0 12px 0;
 }
 
 .banner-eventos table tr td#actions form {

@@ -78,18 +78,21 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
-
-        $user = auth()->user();
         $hasUserJoined = false;
 
-        $userEvents = $user->eventsAsParticipants->toArray();
+        if(Auth::check()){
+            $user = auth()->user();
+            
+            $userEvents = $user->eventsAsParticipants->toArray();
 
-        foreach($userEvents as $userEvent){
-            if($userEvent['id'] == $id){
-                $hasUserJoined = true;
-            }
+            foreach($userEvents as $userEvent){
+                if($userEvent['id'] == $id){
+                    $hasUserJoined = true;
+                }
 
-        } 
+            } 
+        }
+        
 
         return view('evento', ['event' => $event, 'eventOwner' => $eventOwner, 'hasUserJoined' => $hasUserJoined]);
     }
@@ -194,7 +197,7 @@ class EventController extends Controller
 
         $user = auth()->user();
 
-        $user->eventsAsParticipants()->detach();
+        $user->eventsAsParticipants()->detach($id);
 
         return redirect('/dashboard');
 

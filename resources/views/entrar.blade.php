@@ -6,7 +6,7 @@
     <title>HDC Events - Login</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="http://127.0.0.1/aprendendo-lav/resources/css/app.css" rel="stylesheet">
+    <link href="{{ config('constants.INITIAL_PATH') }}/resources/css/app.css" rel="stylesheet">
 </head>
 <body style='background-color: rgb(182, 188, 194)'>
 
@@ -29,7 +29,7 @@
     <div class="form-login">
 
         <div class="logo center">
-          <a href='/'>  <img src='http://127.0.0.1/aprendendo-lav/resources/imgs/logomark.min.svg'> </a>
+          <a href='/'>  <img src='{{ config("constants.INITIAL_PATH") }}/resources/imgs/logomark.min.svg'> </a>
         </div>
 
         <form method='post' action='entrar'>
